@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Experience - Umme Hani</title>
+    <link rel="icon" type="image/png" href="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #20263A;
+            color: white;
+        }
+        /* Header Styling */
+        .Name strong{
+            margin-left: -276px;
+            font-size: 17px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar {
+           background: rgba( 17, 16, 16, 0.75 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.5px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right:10px;
+        }
+        .navbar a {
+            color: gray;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: white;
+        }
+
+        .card1 {
+          width: 190px;
+          height: 230px;
+          margin-left: 20px;
+          border-radius: 20px;
+          background: #1E1E2E; /* Dark background */
+          position: relative;
+          padding: 1.8rem;
+          border: 2px solid #39424E; /* Subtle border */
+          transition: 0.4s ease-out;
+          overflow: visible;
+          box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+        }
+
+        .card1-details {
+          color: #D1D5DB; /* Soft gray text */
+          height: 100%;
+          gap: 0.5em;
+          display: grid;
+          place-content: center;
+        }
+
+        .card1-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: #00E6F6; /* Neon Cyan */
+          color: #1E1E2E;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+
+        }
+
+        .text-body {
+          color: #B0B3BA; /* Light gray for readability */
+        }
+
+        /* Image Styling */
+        .card1 img {
+          width: 100%;  /* Ensures the image fills the card */
+          height: 100%;
+          object-fit: cover; /* Ensures the image is cropped properly */
+          border-radius: 15px; /* Soft rounded edges */
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /*Text*/
+        .text-title {
+          font-size: 1em;
+          font-weight: bold;
+          color: #fff; /* White text */
+          text-align: center;
+        }
+
+        /*Hover Effects*/
+        .card1:hover {
+          border-color: #00E6F6; /* Neon cyan border */
+          box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Glowing effect */
+          transform: scale(1.05);
+        }
+
+        .card1:hover .card1-button {
+          transform: translate(-50%, 50%);
+          opacity: 1;
+          box-shadow: 0px 0px 8px rgba(0, 230, 246, 0.6);
+        }
+
+       .card2 {
+          width: 190px;
+          height: 230px;
+          margin-left: 20px;
+          border-radius: 20px;
+          background: #1E1E2E; /* Dark background */
+          position: relative;
+          padding: 1.8rem;
+          border: 2px solid #39424E; /* Subtle border */
+          transition: 0.4s ease-out;
+          overflow: visible;
+          box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+        }
+
+        .card2-details {
+          color: #D1D5DB; /* Soft gray text */
+          height: 100%;
+          gap: 0.5em;
+          display: grid;
+          place-content: center;
+        }
+
+        .card2-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: #00E6F6; /* Neon Cyan */
+          color: #1E1E2E;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+
+        }
+
+        /* Image Styling */
+        .card2 img {
+          width: 100%;  /* Ensures the image fills the card */
+          height: 100%;
+          object-fit: cover; /* Ensures the image is cropped properly */
+          border-radius: 15px; /* Soft rounded edges */
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /*Hover Effects*/
+        .card2:hover {
+          border-color: #00E6F6; /* Neon cyan border */
+          box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Glowing effect */
+          transform: scale(1.05);
+        }
+
+        .card2:hover .card2-button {
+          transform: translate(-50%, 50%);
+          opacity: 1;
+          box-shadow: 0px 0px 8px rgba(0, 230, 246, 0.6);
+        }
+
+        .card2{
+            margin-left: 320px;
+            margin-top: -290px;
+        }
+
+        .card3 {
+          width: 190px;
+          height: 230px;
+          margin-left: 20px;
+          border-radius: 20px;
+          background: #1E1E2E; /* Dark background */
+          position: relative;
+          padding: 1.8rem;
+          border: 2px solid #39424E; /* Subtle border */
+          transition: 0.4s ease-out;
+          overflow: visible;
+          box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+        }
+
+        .card3-details {
+          color: #D1D5DB; /* Soft gray text */
+          height: 100%;
+          gap: 0.5em;
+          display: grid;
+          place-content: center;
+        }
+
+        .card3-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: #00E6F6; /* Neon Cyan */
+          color: #1E1E2E;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+
+        }
+
+        /* Image Styling */
+        .card3 img {
+          width: 100%;  /* Ensures the image fills the card */
+          height: 100%;
+          object-fit: cover; /* Ensures the image is cropped properly */
+          border-radius: 15px; /* Soft rounded edges */
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /*Hover Effects*/
+        .card3:hover {
+          border-color: #00E6F6; /* Neon cyan border */
+          box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Glowing effect */
+          transform: scale(1.05);
+        }
+
+        .card3:hover .card3-button {
+          transform: translate(-50%, 50%);
+          opacity: 1;
+          box-shadow: 0px 0px 8px rgba(0, 230, 246, 0.6);
+        }
+
+        .card3{
+            margin-left: 620px;
+            margin-top: -287px;
+        }
+
+        .card4 {
+          width: 190px;
+          height: 230px;
+          margin-left: 20px;
+          border-radius: 20px;
+          background: #1E1E2E; /* Dark background */
+          position: relative;
+          padding: 1.8rem;
+          border: 2px solid #39424E; /* Subtle border */
+          transition: 0.4s ease-out;
+          overflow: visible;
+          box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+        }
+
+        .card4-details {
+          color: #D1D5DB; /* Soft gray text */
+          height: 100%;
+          gap: 0.5em;
+          display: grid;
+          place-content: center;
+        }
+
+        .card4-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: #00E6F6; /* Neon Cyan */
+          color: #1E1E2E;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+
+        }
+
+        /* Image Styling */
+        .card4 img {
+          width: 100%;  /* Ensures the image fills the card */
+          height: 100%;
+          object-fit: cover; /* Ensures the image is cropped properly */
+          border-radius: 15px; /* Soft rounded edges */
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /*Hover Effects*/
+        .card4:hover {
+          border-color: #00E6F6; /* Neon cyan border */
+          box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Glowing effect */
+          transform: scale(1.05);
+        }
+
+        .card4:hover .card4-button {
+          transform: translate(-50%, 50%);
+          opacity: 1;
+          box-shadow: 0px 0px 8px rgba(0, 230, 246, 0.6);
+        }
+
+        .card4{
+            margin-left: 920px;
+            margin-top: -287px;
+        }
+
+        .card5 {
+          width: 190px;
+          height: 230px;
+          margin-left: 20px;
+          border-radius: 20px;
+          background: #1E1E2E; /* Dark background */
+          position: relative;
+          padding: 1.8rem;
+          border: 2px solid #39424E; /* Subtle border */
+          transition: 0.4s ease-out;
+          overflow: visible;
+          box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+        }
+
+        .card5-details {
+          color: #D1D5DB; /* Soft gray text */
+          height: 100%;
+          gap: 0.5em;
+          display: grid;
+          place-content: center;
+        }
+
+        .card5-button {
+          transform: translate(-50%, 125%);
+          width: 60%;
+          border-radius: 1rem;
+          border: none;
+          background-color: #00E6F6; /* Neon Cyan */
+          color: #1E1E2E;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+
+        }
+
+        /* Image Styling */
+        .card5 img {
+          width: 100%;  /* Ensures the image fills the card */
+          height: 100%;
+          object-fit: cover; /* Ensures the image is cropped properly */
+          border-radius: 15px; /* Soft rounded edges */
+          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        /*Hover Effects*/
+        .card5:hover {
+          border-color: #00E6F6; /* Neon cyan border */
+          box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Glowing effect */
+          transform: scale(1.05);
+        }
+
+        .card5:hover .card5-button {
+          transform: translate(-50%, 50%);
+          opacity: 1;
+          box-shadow: 0px 0px 8px rgba(0, 230, 246, 0.6);
+        }
+
+        .card5{
+            margin-top: 30px;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg" width="30px" height="30px">
+            </div>
+            <div class="Name"><strong>Umme Hani</strong></div>
+            <div>
+                <strong>
+                <a href="index.html">Home</a>
+                <a href="Aboutme.html">Skills</a>
+                <a href="Aboutme.html">Certificates</a>
+                <a href="#ProjectExperience">Projects</a>
+                <a href="Education.html">Studies</a>
+                <a href="contact.html">Contact</a>
+                </strong>
+            </div>
+         </div>
+    </header>
+    <section class="projects">
+        <h1 align="Center">My work</h1>
+        <hr width="50%" color="gray">
+        <div class="project-grid">
+            <!-- From Uiverse.io by alexruix --> 
+            <div class="card1">
+              <div class="card1-details">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\Wedding Event.jpeg" alt="Wedding Event Management">
+                <p class="text-title">Wedding Event Mangement (Frontend Project)</p>
+              </div>
+              <a href="https://github.com/Ummehani18/event-managment">
+              <button class="card1-button">More info</button></a>
+            </div>
+            <div class="card2">
+              <div class="card2-details">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\Harry.jpeg" alt="Harry Potter's Invisible Cloak">
+                <p class="text-title">Harry Potter's Invisible Cloak (Open CV Python)</p>
+              </div>
+              <a href="https://github.com/Ummehani18/Harry-potter-s-Invisible-Cloak">
+              <button class="card2-button">More info</button></a>
+            </div>
+            <div class="card3">
+              <div class="card3-details">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\Real time Translator.jpeg" alt="Real-Time Language Translator">
+                <p class="text-title">Real Time Language Translator (Python Web Application)</p>
+              </div>
+              <a href="https://github.com/Ummehani18/Real-time-language-translator">
+              <button class="card3-button">More info</button></a>
+            </div>
+            <div class="card4">
+              <div class="card4-details">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\Career.jpeg" alt="Career Navigation System">
+                <p class="text-title">Career Navigation System (Database Project)</p>
+              </div>
+              <a href="https://github.com/Ummehani18/Career-Navigation-System-DBMS">
+              <button class="card4-button">More info</button></a>
+            </div>
+            <div class="card5">
+              <div class="card4-details">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\Stock Look Up.jpeg" alt="Stock LookUp App" >
+                <p class="text-title">Stock LookUp App <br> (Android Application)</p>
+              </div>
+              <a href="https://github.com/Ummehani18/StockLookUp_App">
+              <button class="card5-button">More info</button></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.addEventListener("mousemove", (event) => {
+        let x = event.clientX / window.innerWidth * 100;
+        let y = event.clientY / window.innerHeight * 100;
+        document.body.style.background = `radial-gradient(circle at ${x}% ${y}%, #3A506B, #2A3150)`;
+    });
+</script>
+</body>
+</html>

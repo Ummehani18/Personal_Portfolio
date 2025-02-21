@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Umme Hani</title>
+    <link rel="icon" type="image/png" href="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg">
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #20263A;
+            color: white;
+        }
+        body a{
+            text-decoration: none;
+        }
+        /* Header Styling */
+        .Name strong{
+            margin-left: -276px;
+            font-size: 17px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar {
+           background: rgba( 17, 16, 16, 0.75 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.5px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right:10px;
+        }
+        .navbar a {
+            color: gray;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: white;
+        }
+        .about {
+            text-align: center;
+            padding: 30px;
+            color: white; /* Ensures readability */
+        }
+        .about hr {
+            width: 90%;
+            margin: 10px auto;
+            border: 1px solid gray;
+        }
+        .neon-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #00f, 0 0 80px #00f;
+            animation: flicker 1.5s infinite alternate;
+            margin-top: -20px;
+        }
+        .about-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-left: -40px;
+        }
+        .profile img {
+            border-radius: 50%;
+        }
+        .languages button {
+            background:transparent;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        .bio {
+            flex: 1;
+            text-align: left;
+            max-width: 800px;
+        }
+        .bio p{
+            font-size: 20px;
+        }
+        .bio h2 {
+            color: #A0A0FF;
+        }
+        .skills div {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px 0;
+        }
+        .skills h3 {
+            color: #A0A0FF;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #A0A0FF;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #008080;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bio {
+                text-align: center;
+            }
+        }
+        /* Assign different background colors using nth-child */
+        .tag:nth-child(1) { background-color: #E63946; } /* Red */
+        .tag:nth-child(2) { background-color: #F4A261; } /* Orange */
+        .tag:nth-child(3) { background-color: #2A9D8F; } /* Teal */
+        .tag:nth-child(4) { background-color: #264653; } /* Dark Blue */
+        .tag:nth-child(5) { background-color: #8A4FFF; } /* Purple */
+        .tag:nth-child(6) { background-color: #E76F51; } /* Coral */
+        .tag:nth-child(7) { background-color: #457B9D; } /* Blue */
+        .tag:nth-child(8) { background-color: #D4A373; } /* Beige */
+        .tag:nth-child(9) { background-color: #9B5DE5; } /* Violet */
+        .tag:nth-child(10) { background-color: #38A3A5; } /* Greenish Blue */
+        .tag:nth-child(11) { background-color: #8338EC; } /* Deep Purple */
+        .tag:nth-child(12) { background-color: #EF476F; } /* Pink */
+        .tag:nth-child(13) { background-color: #06D6A0; } /* Light Green */
+        .tag:nth-child(14) { background-color: #FFD166; } /* Yellow */
+        .tag:nth-child(15) { background-color: #118AB2; } /* Blue */
+        .tag:nth-child(16) { background-color: #073B4C; } /* Dark Cyan */
+
+
+        .card0 {
+        --bg: #1E1E2E; /* Dark background */
+        --hover-bg: rgba(40, 44, 52, 0.95); /* Subtle dark overlay */
+        --hover-text: #00E6F6; /* Light cyan glow for text */
+
+        max-width: 200px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.8em;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: #fff; /* White text */
+        box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+    }
+
+    .card0__body {
+        color: #D1D5DB; /* Soft gray for readability */
+        line-height: 1.5em;
+        font-size: 1em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card0 > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card0 span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.4s ease-in-out;
+        text-shadow: 0 0 10px rgba(0, 230, 246, 0.8); /* Soft cyan glow */
+        opacity: 0;
+    }
+
+    /* Hides original content and shows "Follow Me" on hover */
+    .card0:hover {
+        background: var(--hover-bg);
+        box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Subtle neon glow */
+        transform: scale(1.02);
+    }
+
+    .card0:hover > strong,
+    .card0:hover .card0__body {
+        opacity: 0; /* Hide original text */
+    }
+
+    .card0:hover span {
+        top: 0;
+        font-size: 1.7em;
+        opacity: 1; /* Show "Follow Me" */
+    }
+    .card1 {
+        --bg: #1E1E2E; /* Dark background */
+        --hover-bg: rgba(40, 44, 52, 0.95); /* Subtle dark overlay */
+        --hover-text: #00E6F6; /* Light cyan glow for text */
+        margin-top: -140px;
+        margin-left: 285px;
+        max-width: 200px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.8em;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: #fff; /* White text */
+        box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+    }
+
+    .card1__body {
+        color: #D1D5DB; /* Soft gray for readability */
+        line-height: 1.5em;
+        font-size: 1em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card1 > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card1 span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.4s ease-in-out;
+        text-shadow: 0 0 10px rgba(0, 230, 246, 0.8); /* Soft cyan glow */
+        opacity: 0;
+    }
+
+    /* Hides original content and shows "Follow Me" on hover */
+    .card1:hover {
+        background: var(--hover-bg);
+        box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Subtle neon glow */
+        transform: scale(1.02);
+    }
+
+    .card1:hover > strong,
+    .card1:hover .card1__body {
+        opacity: 0; /* Hide original text */
+    }
+
+    .card1:hover span {
+        top: 0;
+        font-size: 1.7em;
+        opacity: 1; /* Show "Follow Me" */
+    }
+
+        .card2 {
+        --bg: #1E1E2E; /* Dark background */
+        --hover-bg: rgba(40, 44, 52, 0.95); /* Subtle dark overlay */
+        --hover-text: #00E6F6; /* Light cyan glow for text */
+        margin-top: -140px;
+        margin-left: 570px;
+        max-width: 220px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.8em;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: #fff; /* White text */
+        box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+    }
+
+    .card2__body {
+        color: #D1D5DB; /* Soft gray for readability */
+        line-height: 1.5em;
+        font-size: 1em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card2 > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card2 span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.4s ease-in-out;
+        text-shadow: 0 0 10px rgba(0, 230, 246, 0.8); /* Soft cyan glow */
+        opacity: 0;
+    }
+
+    /* Hides original content and shows "Follow Me" on hover */
+    .card2:hover {
+        background: var(--hover-bg);
+        box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Subtle neon glow */
+        transform: scale(1.02);
+    }
+
+    .card2:hover > strong,
+    .card2:hover .card2__body {
+        opacity: 0; /* Hide original text */
+    }
+
+    .card2:hover span {
+        top: 0;
+        font-size: 1.7em;
+        opacity: 1; /* Show "Follow Me" */
+    }
+
+    .card3 {
+        --bg: #1E1E2E; /* Dark background */
+        --hover-bg: rgba(40, 44, 52, 0.95); /* Subtle dark overlay */
+        --hover-text: #00E6F6; /* Light cyan glow for text */
+        margin-top: 20px;
+        max-width: 200px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.8em;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        color: #fff; /* White text */
+        box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.2); /* Soft blue glow */
+    }
+
+    .card3__body {
+        color: #D1D5DB; /* Soft gray for readability */
+        line-height: 1.5em;
+        font-size: 1em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card3 > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card3 span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.4s ease-in-out;
+        text-shadow: 0 0 10px rgba(0, 230, 246, 0.8); /* Soft cyan glow */
+        opacity: 0;
+    }
+
+    /* Hides original content and shows "Follow Me" on hover */
+    .card3:hover {
+        background: var(--hover-bg);
+        box-shadow: 0px 0px 20px rgba(0, 230, 246, 0.4); /* Subtle neon glow */
+        transform: scale(1.02);
+    }
+
+    .card3:hover > strong,
+    .card3:hover .card3__body {
+        opacity: 0; /* Hide original text */
+    }
+
+    .card3:hover span {
+        top: 0;
+        font-size: 1.7em;
+        opacity: 1; /* Show "Follow Me" */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg" width="30px" height="30px">
+            </div>
+            <div class="Name"><strong>Umme Hani</strong></div>
+            <div>
+                <strong>
+                <a href="index.html">Home</a>
+                <a href="Aboutme.html">Skills</a>
+                <a href="Aboutme.html">Certificates</a>
+                <a href="ProjectExperience.html">Projects</a>
+                <a href="Education.html">Studies</a>
+                <a href="contact.html">Contact</a>
+                </strong>
+            </div>
+         </div>
+    </header>
+    
+    <section class="about">
+        <div class="about-container">
+            <div class="profile">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg" width="200px" height="200px">
+                <p><strong>📍 Karnataka, India</strong></p>
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\icon-language.png" width="50px"
+                height="50px">
+                <div class="languages">
+                    <button>English</button>
+                    <button>Kannada</button>
+                    <button>Hindi</button>
+                </div>
+            </div>
+            <div class="bio">
+                <h2>Skills & Expertise</h2>
+                <div class="skills">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">XML</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Tkinter</span>
+                        <span class="tag">Android Studio</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Git</span>
+                </div>
+                <h2>Certification</h2>
+                <div class="Certification">
+                    <div class="card0">
+                        <strong>IBM DevOps & Software Engineering</strong>
+                        <div class="card0__body">From Coursera</div>
+                        <span>Updating soon</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1a1Tp_aug9CBzapJAZDkq9GVUJlv9r2lr/view?usp=sharing">
+                    <div class="card1">
+                        <strong>Foundation course, TechSaksham</strong>
+                        <div class="card1__body">By Microsoft & SAP</div>
+                        <span>Verify Now</span>
+                    </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1J9SagA-TiYMmfHI4YMo8OnBdwKDzame4/view?usp=sharing">
+                    <div class="card2">
+                        <strong>Cloud Computing</strong>
+                        <div class="card2__body">Under NPTEL,IIT Kharagpur</div>
+                        <span>Verify Now</span>
+                    </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1gdXf2se6bpkxSbDEj17XEFZMHzvF3NlN/view?usp=sharing">
+                    <div class="card3">
+                        <strong>Android App Development</strong>
+                        <div class="card3__body">From Internshala</div>
+                        <span>Verify Now</span>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    document.addEventListener("mousemove", (event) => {
+        let x = event.clientX / window.innerWidth * 100;
+        let y = event.clientY / window.innerHeight * 100;
+        document.body.style.background = `radial-gradient(circle at ${x}% ${y}%, #3A506B, #2A3150)`;
+    });
+</script>
+</body>
+</html>

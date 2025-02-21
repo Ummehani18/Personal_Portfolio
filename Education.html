@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Umme Hani</title>
+    <link rel="icon" type="image/png" href="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #20263A;
+            color: white;
+        }
+        /* Header Styling */
+        .Name strong{
+            margin-left: -280px;
+            font-size: 17px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar {
+           background: rgba( 17, 16, 16, 0.75 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.5px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right:10px;
+        }
+        .navbar a {
+            color: gray;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: white;
+        }
+        .education {
+            text-align: center;
+            padding: 30px;
+            color: white; /* Ensures readability */
+        }
+        .education hr {
+            width: 90%;
+            margin: 10px auto;
+            border: 1px solid gray;
+        }
+        .education h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        .education-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-left: -40px;
+        }
+        .profile img {
+            border-radius: 50%;
+        }
+        .languages button {
+            background:transparent;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        .education-details {
+            flex: 1;
+            text-align: left;
+            max-width: 500px;
+        }
+        /* From Uiverse.io by SouravBandyopadhyay */ 
+.notification1 {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 18rem;
+  height: 8rem;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #32a6ff
+}
+
+.notification1:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2
+}
+
+.notification1:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification1:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle1 {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification1:hover .notititle {
+  transform: translateX(0.15rem)
+}
+
+.notibody1 {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification1:hover .notibody1 {
+  transform: translateX(0.25rem)
+}
+
+.notiglow1,
+.notiborderglow1 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow1 {
+  z-index: 3;
+}
+
+.notiborderglow1 {
+  z-index: 1;
+}
+
+.notification1:hover .notiglow1 {
+  opacity: 0.1
+}
+
+.notification1:hover .notiborderglow1 {
+  opacity: 0.1
+}
+
+.note1 {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+.notification2 {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 18rem;
+  height: 8rem;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #32a6ff
+}
+
+.notification2:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2
+}
+
+.notification2:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification2:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle2 {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification2:hover .notititle2 {
+  transform: translateX(0.15rem)
+}
+
+.notibody2 {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification2:hover .notibody2 {
+  transform: translateX(0.25rem)
+}
+
+.notiglow2,
+.notiborderglow2 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow2 {
+  z-index: 3;
+}
+
+.notiborderglow2 {
+  z-index: 1;
+}
+
+.notification2:hover .notiglow2 {
+  opacity: 0.1
+}
+
+.notification2:hover .notiborderglow2 {
+  opacity: 0.1
+}
+
+.note2{
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+.notification3 {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 18rem;
+  height: 8rem;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #32a6ff
+}
+
+.notification3:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2
+}
+
+.notification3:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification3:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle3 {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification3:hover .notititle3 {
+  transform: translateX(0.15rem)
+}
+
+.notibody3 {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification3:hover .notibody3 {
+  transform: translateX(0.25rem)
+}
+
+.notiglow3,
+.notiborderglow3 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow3 {
+  z-index: 3;
+}
+
+.notiborderglow3 {
+  z-index: 1;
+}
+
+.notification3:hover .notiglow3 {
+  opacity: 0.1
+}
+
+.notification3:hover .notiborderglow3 {
+  opacity: 0.1
+}
+
+.note3 {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg" width="30px" height="30px">
+            </div>
+            <div class="Name"><strong>Umme Hani</strong></div>
+            <div>
+                <strong>
+                <a href="index.html">Home</a>
+                <a href="Aboutme.html">Skills</a>
+                <a href="Aboutme.html">Certificates</a>
+                <a href="ProjectExperience.html">Projects</a>
+                <a href="#Education">Studies</a>
+                <a href="contact.html">Contact</a>
+                </strong>
+            </div>
+         </div>
+    </header>
+    <section class="education">
+        <div class="education-container">
+            <div class="profile">
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\avatar.jpeg" width="200px" height="200px">
+                <p><strong>📍 Karnataka, India</strong></p>
+                <img src="C:\Users\Umme Hani\Documents\Portfolio\image\icon-language.png" width="50px"
+                height="50px">
+                <div class="languages">
+                    <button>English</button>
+                    <button>Kannada</button>
+                    <button>Hindi</button>
+                </div>
+            </div>
+            <div class="education-details">
+
+                <!-- From Uiverse.io by SouravBandyopadhyay --> 
+            <div class="notification1">
+                <div class="notiglow1"></div>
+                <div class="notiborderglow1"></div>
+                <div class="notititle1">B.E in Computer Science and Engineering</div>
+                <div class="notibody1"><strong>Government Engineering College Mosale Hosahalli, Hassan</strong> |2021-2025 | CGPA: 8.13</div>
+            </div>
+            <br>
+            <div class="notification2">
+                <div class="notiglow2"></div>
+                <div class="notiborderglow2"></div>
+                <div class="notititle2">XII (Science)</div>
+                <div class="notibody2"><strong>Govt. Maharani PU College, Mysore</strong><br>Percentage: 81%</div>
+            </div>
+            <br>
+            <div class="notification3">
+                <div class="notiglow3"></div>
+                <div class="notiborderglow3"></div>
+                <div class="notititle3">X (SSLC)</div>
+                <div class="notibody3"><strong>Malnad English and High School, Mysore</strong><br>Percentage: 81%</div>
+            </div>   
+            </div>
+        </div>
+    </section>
+    <script>
+    document.addEventListener("mousemove", (event) => {
+        let x = event.clientX / window.innerWidth * 100;
+        let y = event.clientY / window.innerHeight * 100;
+        document.body.style.background = `radial-gradient(circle at ${x}% ${y}%, #3A506B, #2A3150)`;
+    });
+</script>
+</body>
+</html>
